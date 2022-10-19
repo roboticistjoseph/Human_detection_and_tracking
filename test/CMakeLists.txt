@@ -4,6 +4,8 @@ add_executable(
     cpp-test
     main.cpp
     test.cpp
+    ../src/camera.cpp
+    ../src/preprocess.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
