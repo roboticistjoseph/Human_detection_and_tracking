@@ -45,7 +45,12 @@ A C++ Module for new robotics-based product of ACME Robotics using high-quality 
 
   - The project proposal document can be found [here](/docs/proposal/Human_Detection_and_Tracker_Proposal.pdf).  
   - The proposal video can be found [here](https://youtu.be/7sqIBtfbFjk).  
-  - The quadchart can be found [here](/docs/proposal/Quadchart.pdf).  
+  - The quadchart can be found [here](/docs/proposal/Quadchart.pdf).
+
+### Project Backlog
+
+  - Using the Software Engineering Practices, all design and development work was followed Agile Iterative Process (AIP) where product backlog, iteration backlog, and work log were maintained usign appropriate measure.
+  - The Sheet can be accessed [here](https://docs.google.com/spreadsheets/d/1Nfs6v8OHeC70GFt3viYTwkHFGsq4SffKc7hRbwgNCj4/edit#gid=0)
 
 ## System Design
 
@@ -60,6 +65,46 @@ A C++ Module for new robotics-based product of ACME Robotics using high-quality 
 
 ![Activity Diagram](/UML/proposal/HumanDetectionTracking_ActivityDiagram.png)  
 
+## Project Hierarchy
+
+<pre><font color="#3465A4"><b>.</b></font>
+├── <font color="#3465A4"><b>app</b></font>
+│   ├── CMakeLists.txt
+│   └── main.cpp
+├── <font color="#3465A4"><b>cmake</b></font>
+│   └── CodeCoverage.cmake
+├── CMakeLists.txt
+├── <font color="#3465A4"><b>data</b></font>
+│   └── <font color="#75507B"><b>human.jpg</b></font>
+├── <font color="#3465A4"><b>docs</b></font>
+│   └── <font color="#3465A4"><b>proposal</b></font>
+├── <font color="#3465A4"><b>include</b></font>
+│   ├── camera.hpp
+│   ├── model.hpp
+│   ├── preprocess.hpp
+│   ├── track.hpp
+│   └── transform.hpp
+├── LICENSE
+├── README.md
+├── <font color="#3465A4"><b>results</b></font>
+│   ├── cppcheck.txt
+│   └── cpplint.txt
+├── <font color="#3465A4"><b>src</b></font>
+│   ├── camera.cpp
+│   ├── CMakeLists.txt
+│   ├── model.cpp
+│   ├── preprocess.cpp
+│   ├── track.cpp
+│   └── transform.cpp
+├── <font color="#3465A4"><b>test</b></font>
+│   ├── CMakeLists.txt
+│   ├── main.cpp
+│   └── test.cpp
+├── <font color="#3465A4"><b>UML</b></font>
+│   └── <font color="#3465A4"><b>proposal</b></font>
+└── <font color="#3465A4"><b>vendor</b></font>
+    └── <font color="#3465A4"><b>googletest</b></font>
+</pre>
 
 ### Dependencies  
 
